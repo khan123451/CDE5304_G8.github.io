@@ -1,3 +1,3 @@
 # CDE5304_G8.github.io
 
-React XR F1 game watching
+Next.js XR F1 game watching
