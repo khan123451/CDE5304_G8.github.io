@@ -2,6 +2,8 @@
 
 import React, { useState } from 'react';
 import { ModelViewer } from '../components/model-viewer';
+import SubscriptionOptions from '../components/subscription-options';
+import NavBar from './navbar';
 import styles from '../styles/Home.module.css';
 
 export default function Home() {
@@ -34,8 +36,9 @@ export default function Home() {
 
   return (
     <div className={styles.container}>
+      <NavBar />
       <h1 className={styles.heading}>XRacePro: Your Next Tool for Formula One Game Watching</h1>
-
+      <br />
       <div className={styles.modelViewerContainer}>
         <ModelViewer />
       </div>
@@ -69,6 +72,7 @@ export default function Home() {
           <div className={styles.popupBackground} onClick={closePopup}></div>
         </>
       )}
+    <SubscriptionOptions />
     </div>
   );
 }

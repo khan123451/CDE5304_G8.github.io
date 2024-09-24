@@ -19,7 +19,7 @@ export const RacingCarModel: React.FC = () => {
 
     useFrame((_state, delta) => {
         if (modelRef.current) {
-            modelRef.current.rotation.y += delta / 20;
+            modelRef.current.rotation.y += delta / 10;
         }
     });
 
