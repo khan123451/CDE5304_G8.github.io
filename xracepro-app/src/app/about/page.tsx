@@ -62,25 +62,25 @@ const About: React.FC = () => {
         <h2>Meet Our Team</h2>
         <div className="team-grid">
           <div className="team-member">
-            <img src="/images/team-member2.jpg" alt="Jane Smith" />
+            <img src="/images/team-member1.jpeg" alt="Jane Smith" />
             <h3>Zou Kai</h3>
             <p>Formula 1 Analyst</p>
             <p>Jane&apos;s deep understanding of Formula 1 brings authenticity and insight to our XR experiences.</p>
           </div>
           <div className="team-member">
-            <img src="/images/team-member1.jpg" alt="John Doe" />
+            <img src="/images/team-member2.jpeg" alt="John Doe" />
             <h3>Zheng Zikang</h3>
             <p>Lead XR Developer</p>
             <p>With over a decade of experience in XR development, John leads our technical team to push the boundaries of immersive technology.</p>
           </div>
           <div className="team-member">
-            <img src="/images/team-member1.jpg" alt="Alex Johnson" />
+            <img src="/images/team-member3.jpeg" alt="Alex Johnson" />
             <h3>Feng Weiyi</h3>
             <p>Creative Director</p>
             <p>Alex crafts the visual storytelling that makes our XR experiences truly unforgettable.</p>
           </div>
           <div className="team-member">
-            <img src="/images/team-member2.jpg" alt="Maria Garcia" />
+            <img src="/images/team-member4.jpeg" alt="Maria Garcia" />
             <h3>Cheng Wei</h3>
             <p>UX/UI Designer</p>
             <p>Maria ensures that our platforms are intuitive and engaging, providing seamless user experiences.</p>
@@ -110,7 +110,7 @@ const About: React.FC = () => {
           justify-content: space-between;
           align-items: center;
           padding: 50px;
-          background-image: url('/images/hero-bg.jpg');
+          background-color: black;
           background-size: cover;
           background-position: center;
           color: #fff;

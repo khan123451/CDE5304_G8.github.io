@@ -45,6 +45,9 @@ export default function Home() {
           <p className={styles.subheading}>
             Experience Formula One racing like never before with <strong>XRacePro</strong>. Dive into the action with extended reality!
           </p>
+          <br />
+          <br />
+          <br />
           <form onSubmit={handleSubmit} className={styles.form}>
             <input
               type="email"
