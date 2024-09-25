@@ -37,33 +37,29 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <NavBar />
-      <section className={styles.heroSection}>
-        <div className={styles.heroContent}>
-          <h1 className={styles.heading}>
-            XRace<span className={styles.highlight}>Pro</span>: Your Next Tool for Formula One Game Watching
-          </h1>
-          <p className={styles.subheading}>
-            Experience Formula One racing like never before with <strong>XRacePro</strong>. Dive into the action with extended reality!
-          </p>
-          <form onSubmit={handleSubmit} className={styles.form}>
-            <input
-              type="email"
-              value={email}
-              onChange={handleChange}
-              placeholder="Enter your email"
-              required
-              className={styles.input}
-            />
-            <button type="submit" className={styles.button}>
-              Subscribe
-            </button>
-          </form>
-        </div>
-      </section>
-
+      <h1 className={styles.heading}>XRacePro: Your Next Tool for Formula One Game Watching</h1>
+      <br />
       <div className={styles.modelViewerContainer}>
         <ModelViewer />
       </div>
+
+      <p className={styles.subheading}>
+        Experience Formula One racing like never before with XRacePro. Dive into the action with extended reality!
+      </p>
+
+      <form onSubmit={handleSubmit} className={styles.form}>
+        <input
+          type="email"
+          value={email}
+          onChange={handleChange}
+          placeholder="Enter your email"
+          required
+          className={styles.input}
+        />
+        <button type="submit" className={styles.button}>
+          Submit
+        </button>
+      </form>
 
       {popupMessage && (
         <>
@@ -76,8 +72,7 @@ export default function Home() {
           <div className={styles.popupBackground} onClick={closePopup}></div>
         </>
       )}
-
-      <SubscriptionOptions />
+    <SubscriptionOptions />
     </div>
   );
 }
