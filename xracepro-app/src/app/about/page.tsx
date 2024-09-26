@@ -4,10 +4,10 @@ import NavBar from '../navbar/page';
 import React from 'react';
 
 const About: React.FC = () => {
-  const handleSubmit = (e: React.FormEvent, plan: string) => {
+  const handleSubmit = (e: React.FormEvent, action: string) => {
     e.preventDefault();
     // Implement get started here
-    alert(`We will get in touch with you soon!`);
+    alert(`${action}. We will get in touch with you soon!`);
   };
 
   return (
@@ -98,7 +98,7 @@ const About: React.FC = () => {
       <section className="cta-section">
         <h2>Ready to Feel the Speed?</h2>
         <p>Join the future of Formula 1 viewing with XR. It’s time to take your seat in the cockpit!</p>
-        <form onSubmit={(e) => handleSubmit(e, 'Annual Subscription')}>
+        <form onSubmit={(e) => handleSubmit(e, 'Get Started')}>
           <button type="submit" id="get-started-action" className="cta-button">
             <b>Get Started</b>
           </button>
