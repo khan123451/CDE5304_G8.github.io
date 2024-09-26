@@ -4,6 +4,12 @@ import NavBar from '../navbar/page';
 import React from 'react';
 
 const About: React.FC = () => {
+  const handleSubmit = (e: React.FormEvent, plan: string) => {
+    e.preventDefault();
+    // Implement get started here
+    alert(`We will get in touch with you soon!`);
+  };
+
   return (
     <div className="about-container">
       <NavBar />
@@ -92,7 +98,12 @@ const About: React.FC = () => {
       <section className="cta-section">
         <h2>Ready to Feel the Speed?</h2>
         <p>Join the future of Formula 1 viewing with XR. It’s time to take your seat in the cockpit!</p>
-        <button className="cta-button">Get Started</button>
+        <form onSubmit={(e) => handleSubmit(e, 'Annual Subscription')}>
+          <button type="submit" id="get-started-action" className="cta-button">
+            <b>Get Started</b>
+          </button>
+        </form>
+        <br />
       </section>
 
       <style jsx>{`

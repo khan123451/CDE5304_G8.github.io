@@ -1,11 +1,14 @@
 .container {
     text-align: center;
-    padding: 2rem;
     font-family: Arial, sans-serif;
     background-image: url('/images/racing-background.jpg');
     background-size: cover;
     background-position: center;
     color: #fff;
+  }
+
+  .mainbody {
+    padding: 2rem;
   }
   
   .heading {

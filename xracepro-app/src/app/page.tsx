@@ -37,6 +37,8 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <NavBar />
+      <br />
+      <div className={styles.mainbody}>
       <section className={styles.heroSection}>
         <div className={styles.heroContent}>
           <h1 className={styles.heading}>
@@ -81,6 +83,7 @@ export default function Home() {
       )}
 
       <SubscriptionOptions />
+      </div>
     </div>
   );
 }

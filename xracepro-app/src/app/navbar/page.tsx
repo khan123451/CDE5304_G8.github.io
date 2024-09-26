@@ -24,19 +24,21 @@ export default function Home() {
       </ul>
       <style jsx>{`
         nav {
-          padding: 10px;
+          padding: 20px !important;
           background-color: transparent;
+          padding: 2rem;
+          position: relative;
         }
         ul {
           list-style: none;
           display: flex;
           gap: 20px;
         }
-        a {
+        b {
           text-decoration: none;
-          color: #0070f3;
+          color: white;
         }
-        a:hover {
+        b:hover {
           text-decoration: underline;
         }
       `}</style>

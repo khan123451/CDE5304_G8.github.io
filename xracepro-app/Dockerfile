@@ -28,7 +28,7 @@ COPY package*.json ./
 # Install only production dependencies
 RUN npm install --production
 
-# Copy the built application from the builder stage
+# Copy the built application from the builder stage linux/
 COPY --from=builder /app/.next ./.next
 COPY --from=builder /app/public ./public
 COPY --from=builder /app/next.config.mjs ./next.config.mjs
