@@ -1,6 +1,6 @@
 "use client";
 
-import NavBar from '../navbar';
+import NavBar from '../navbar/page';
 
 import { Box, Container, Typography, Button, IconButton, TextField } from '@mui/material';
 import { LinkedIn, Email, Twitter } from '@mui/icons-material';

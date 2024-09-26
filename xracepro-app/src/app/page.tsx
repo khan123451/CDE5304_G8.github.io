@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import { ModelViewer } from '../components/model-viewer';
 import SubscriptionOptions from '../components/subscription-options';
-import NavBar from './navbar';
+import NavBar from './navbar/page';
 import styles from '../styles/Home.module.css';
 
 export default function Home() {
